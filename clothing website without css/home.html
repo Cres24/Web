@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+    <div>
+        <button oneclick="home.html" style="font-size:20px;"><a href="home.html">Home</a></button>
+        <button oneclick="contact.html" style="font-size:20px;"><a href="contact.html">Contact</a></button>
+        <button oneclick="about.html" style="font-size:20px;"><a href="About.html">About</a></button>
+    </div>
+    <br>
+    <div class="welcome">
+        <b>Welcome to Rachit's E-commerce website</b>
+    </div>
+    <br>
+    <div style="text-align: center;" class="search">
+        <form action="https://www.flipkart.com/search" method="get" target="_blank">
+        <input type="text" placeholder="Search.." name="q">
+        <button type="submit">🔍</button>
+    </form>
+    </div> 
+    <br><br>
+    <div style="text-align: center;" class="logo">
+        <h1 style="color:red;">E-commerce</h1>
+        <img src="logo.jpg" alt="Logo" width="600" height="200">
+    </div>
+    <fieldset style="background-color:beige;">
+        <legend style="text-align:center;font-family: cursive;font-size:30px;color: blue;">Find best for you</legend>
+        <table border="3" cellspacing="25">
+            <tr>
+                <th class="shoes">
+                    <a href="shoes.html">
+                        <img src="shoes.jpg" alt="Shoes" width="250" height="200" >
+                    </a>
+                </th>
+                <th>
+                    <a href="tshirts.html">
+                        <img src="tshirt.jpg" alt="Tshirts" width="256" height="164">
+                    </a>
+                </th>
+                <th>
+                    <a href="pants.html">
+                        <img src="pants.jpg" alt="Pants" width="250" height="250">
+                    </a>
+                </th>
+                <th>
+                    <a href="jackets.html">
+                        <img src="jackets.jpg" alt="Jackets" width="250" height="250">
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <a href="shoes.html">
+                        <b>Shoes</b>
+                    </a>
+                </td>
+                <td style="text-align: center;">
+                    <a href="tshirt.html">
+                        <b>T-shirts</b>
+                    </a>
+                </td>
+                <td style="text-align: center;">
+                    <a href="pants.html">
+                        <b>Pants</b>
+                    </a>
+                </td>
+                <td style="text-align: center;">
+                    <a href="jackets.html">
+                        <b>Jackets</b>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <script>
+        document.getElementById("dis").innerHTML=JSON.parse(localStorage.getItem('logname'))
+        let logout=document.getElementById("logout")
+        let d=0;
+        function pop(){
+            if(d==0){
+                logout.style.display="flex"
+                d=1;
+            }
+            else{
+                logout.style.display="none"
+                d=0;
+            }
+        }
+    </script>
+</body>
+</html>

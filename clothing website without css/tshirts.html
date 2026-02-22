@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-shirts</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+    <div>
+        <button oneclick="home.html" style="font-size:20px;"><a href="home.html">Home</a></button>
+        <button oneclick="contact.html" style="font-size:20px;"><a href="contact.html">Contact</a></button>
+        <button oneclick="about.html" style="font-size:20px;"><a href="About.html">About</a></button>
+    </div>
+    <br>
+    <button style="margin-left:90%;display:none;" id="logout"><a href="index.html">Log-out</a></button>
+    <br><br>
+    <br>
+    <div style="text-align: center;">
+        <form action="https://www.flipkart.com/search" method="get" target="_blank">
+        <input type="text" placeholder="Search.." name="q">
+        <button type="submit">🔍</button>
+    </form>
+    </div> 
+    <br><br>
+    <div style="text-align: center;">
+        <h1 style="color:red;">E-commerce</h1>
+        <img src="logo.jpg" alt="Logo" width="600" height="200">
+    </div>
+    <fieldset style="background-color:beige;">
+        <legend style="text-align:center;font-family: cursive;font-size:30px;color: blue;">Find best for you</legend>
+        <h3 style="color:blueviolet;">Showing results for T-shirts.....</h3>
+        <table border="3" cellspacing="25">
+            <tr>
+                <th>
+                    <img src="images-1.jpeg" alt="Tshirt-1" width="200" height="250">
+                    <br><br>
+                    Tshirt-1 <br>
+                    Price : Rs.1999
+                </th>
+                <th>
+                    <img src="images-2.jpeg" alt="Tshirt-2" width="250" height="250">
+                    <br><br>
+                    Tshirt-2 <br>
+                    Price : Rs.2999
+                </th>
+                <th>
+                    <img src="images-3.jpeg" alt="Tshirt-3" width="250" height="250">
+                    <br><br>
+                    Tshirt-3
+                    <br>
+                    Price : Rs. 2499
+                </th>
+                <th>
+                    <img src="images-4.jpeg" alt="Tshirt-4" width="200" height="250">
+                    <br><br>
+                    Tshirt-4
+                    <br>
+                    Price : Rs. 1499
+                </th>
+                <th>
+                    <img src="images-5.jpeg" alt="Tshirt-5" width="200" height="250">
+                    <br><br>
+                    Tshirt-5
+                    <br>
+                    Price : Rs. 3999
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="images-6.jpeg" alt="Tshirt-6" width="200" height="250">
+                    <br><br>
+                    Tshirt-6
+                    <br>
+                    Price : Rs. 2564
+                </th>
+                <th>
+                    <img src="images-7.jpeg" alt="Tshirt-7" width="150" height="250">
+                    <br><br>
+                    Tshirt-7 
+                    <br>
+                    Price : Rs. 1800
+                </th>
+                <th>
+                    <img src="images-8.jpeg" alt="Tshirt-8" width="150" height="250">
+                    <br><br>
+                    Tshirt-8
+                    <br>
+                    Price : Rs. 5999
+                </th>
+                <th>
+                    <img src="images-9.jpeg" alt="Tshirt-9" width="200" height="250">
+                    <br><br>
+                    Tshirt-9
+                    <br>
+                    Price : Rs. 5000
+                </th>
+                <th>
+                    <img src="images-10.jpeg" alt="Tshirt-10" width="200" height="250">
+                    <br><br>
+                    Tshirt-10
+                    <br>
+                    Price : Rs. 2555
+                </th>
+            </tr>
+        </table>
+    </fieldset>
+    <hr>
+    <h2 style="color: brown;">
+        Search for other items..
+    </h2>
+    <fieldset style="background-color:beige;">
+        <table border="3" cellspacing="25">
+            <tr>
+                <th>
+                    <a href="shoes.html">
+                        <img src="shoes.jpg" alt="Shoes" width="250" height="200" ><br>
+                        Shoes
+                    </a>
+                </th>
+                <th>
+                    <a href="pants.html">
+                        <img src="pants.jpg" alt="Pants" width="250" height="250"><br>
+                        Pants
+                    </a>
+                </th>
+                <th>
+                    <a href="jackets.html">
+                        <img src="jackets.jpg" alt="Jackets" width="250" height="250"><br>
+                        Jackets
+                    </a>
+                </th>
+            </tr>
+        </table>
+    </fieldset>
+    <script>
+        document.getElementById("dis").innerHTML=JSON.parse(localStorage.getItem('logname'))
+        let logout=document.getElementById("logout")
+        let d=0;
+        function pop(){
+            if(d==0){
+                logout.style.display="flex"
+                d=1;
+            }
+            else{
+                logout.style.display="none"
+                d=0;
+            }
+        }
+    </script>
+</body>
+</html>
