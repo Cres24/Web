@@ -1,0 +1,48 @@
+
+.welcome{
+    background-image:url(border.jpg);
+    background-size: cover;
+    color:yellow;
+    font-size: 40px;
+    text-align: center;
+    border: 10px solid ;
+    padding:5px;
+    border-image: url(border.jpg) 200 round;
+    box-shadow: 8px 8px 8px gray;
+    text-shadow: 4px 4px 4px red;
+}
+a{
+    text-decoration:none;
+}
+button{
+    text-decoration:none;
+}
+h1{
+    text-shadow:4px 4px 4px lightblue;
+}
+tr{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo{
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.search{
+    padding: 2px;
+    text-shadow:  0 4px 8px 0 rgba(242, 232, 232, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name{
+    color:red;
+    font-weight:bold;
+    font-size:20px;
+    margin-left:85%;
+    border:5px solid #7a7ad5;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius:20px;
+    text-decoration:none;
+    background-color:#dfe2f3;
+    cursor: pointer;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
