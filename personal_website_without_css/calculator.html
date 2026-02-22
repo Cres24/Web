@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator by Rachit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="c_body">
+    <section class="container">
+        <fieldset style="background-color: gray;">
+            <legend style="text-align: right; color: black; text-shadow: yellow 3px 5px 8px;"><b>Rachit's Calculater</b></legend>
+            <div class="display">
+                <input type="text" name="display"
+                id="display" class="input">
+              <input type="text" name="display" placeholder='0'
+                id="display" class="output">
+            </div>
+            <br>
+            <div class="button1">
+                <button class="button">Clear</button>
+                <button class="button">Del</button>
+                <button class="button">%</button>
+                <button class="button">/</button>
+            </div>
+            <div class="button2">
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button">*</button>
+            </div>
+            <div class="button3">
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button">-</button>
+            </div>
+            <div class="button4">
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button">+</button>
+            </div>
+            <div class="button5">
+                <button class="button">0</button>
+                <button class="button">.</button>
+                <button class="button">**</button>
+                <button class="button">=</button>
+            </div>
+        </fieldset>
+    </section>
+  <br>
+  <br>
+  <button onclick="show()" class="click">Show history</button>
+  <div class="see" id="see" style="display: none;">
+    <h2 style="color: red;">Your calculations :</h2>
+    <textarea name="calculations" class="calculations" cols="50" rows="20" ></textarea>
+  </div>
+  <script src="hideshow.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
