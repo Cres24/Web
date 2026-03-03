@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="form-container">
+    <h2>Student Registration Form</h2>
+
+    <form onsubmit="return showData()">
+
+        <!-- Name -->
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <!-- Radio -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <!-- Checkbox -->
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skill" value="HTML"> HTML
+        <input type="checkbox" name="skill" value="CSS"> CSS
+        <input type="checkbox" name="skill" value="JavaScript"> JavaScript
+        <br><br>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
