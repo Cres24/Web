@@ -1,29 +1,39 @@
-function showData() {
+let students = [];
+
+// Save form data
+document.getElementById("studentForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
+    let course = document.getElementById("course").value;
 
-    // gender
-    let gender = document.querySelector('input[name="gender"]:checked');
-    if (gender) {
-        gender = gender.value;
-    } else {
-        gender = "Not selected";
+    students.push({ name, email, course });
+
+    alert("Data Saved!");
+
+    document.getElementById("studentForm").reset();
+});
+
+// Download CSV
+function downloadCSV() {
+
+    if (students.length === 0) {
+        alert("No data to download!");
+        return;
     }
 
-    // skills
-    let skills = document.querySelectorAll('input[name="skill"]:checked');
-    let skillList = [];
+    let csv = "Name,Email,Course\n";
 
-    skills.forEach(function(skill){
-        skillList.push(skill.value);
+    students.forEach(function(student) {
+        csv += student.name + "," + student.email + "," + student.course + "\n";
     });
 
-    alert(
-        "Name: " + name +
-        "\nEmail: " + email +
-        "\nGender: " + gender +
-        "\nSkills: " + skillList.join(", ")
-    );
+    let blob = new Blob([csv], { type: "text/csv" });
+    let url = window.URL.createObjectURL(blob);
 
-    return false;
+    let a = document.createElement("a");
+    a.setAttribute("href", url);
+    a.setAttribute("download", "students.csv");
+    a.click();
 }
